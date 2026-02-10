@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Jignesh More Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Jignesh More</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">Welcome !! <span> To my Portfolio </span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Senior Data Analyst  ',
+						'Data Engineer  ',
+						'Data Scientist   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<!-- <br> -->
+			            <!-- <h2> </h2> -->
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<br>
+			            <p>
+							<!-- <a href="https://www.youtube.com/@_Official" class="btn btn-primary py-3 px-4">YouTube</a>  -->
+							<!-- <a href="https://github.com/MoreJignesh" class="btn btn-white btn-outline-white py-3 px-4"> -->
+								<a href="#project-section" class="btn btn-primary py-3 px-4">My Past Projects</a></p>
+		            </div>
+		          </div>
+	        	</div> 
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<div class="row d-flex">
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Jignesh More</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Senior Data Analyst</span></p>
+										<p><span class="title-s">Experience: </span> <span>7 Years 3 Months</span></p>
+										<p><span class="title-s">Address: </span> <span>Canada</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>Excel</span> <span class="pull-right">98%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>SQL</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>PYTHON</span> <span class="pull-right">75%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Data Visualization</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Statistical Analysis</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Machine Learning</span> <span class="pull-right">65%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About Me</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>Results-driven Senior Data Analyst with 7+ years of experience in designing, analyzing, and optimizing data structures to drive business performance. 
+									Skilled in data validation, data modeling, and process automation, ensuring accurate and compliant data structures. 
+									Passionate about leveraging data driven approaches to enhance productivity and profitability.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<!-- <li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span></li> -->
+									<li class="d-flex"><span>Domain:</span> <span>Operation, Marketing, Manufacturing, Mortgage, &amp; Finance</span></li>
+									<!-- <li class="d-flex"><span>Education:</span> <span>Bachelor of Engineering</span></li> -->
+									<li class="d-flex"><span>SQL Expertise:</span> <span>Materialized View, Stored Procedures, Windows Function, CTE's, UDF's, Optimization &amp; Indexing</span></li>
+									<li class="d-flex"><span>BI Tools:</span> <span>Tableau, Power BI, Looker (Data Studio), SSRS, Advanced Excel (Ad-hoc), Executive dashboards &amp; KPI frameworks</span></li>
+									<li class="d-flex"><span>Data Engineering:</span> <span>SSIS, dbt (Data Build Tool), Databricks (PySpark & SQL), Azure Data Factory (ADF), Custom ETL pipelines using Python &amp; SQL</span></li>
+									<li class="d-flex"><span>Data Modeling:</span> <span>Star &amp; Snowflake schemas, Fact &amp; Dimension modeling (Kimball), One Big Table (OBT), Medallion Architecture (Bronze / Silver / Gold), Data lineage &amp; mapping</span></li>
+									<li class="d-flex"><span>Cloud & Data Platform:</span> <span>Microsoft Azure (ADF, Azure SQL, DevOps), Google Cloud Platform (GCP), Snowflake, MongoDB</span></li>
+									<li class="d-flex"><span>DevOps & Collaboration:</span> <span>Git & GitHub, CI/CD pipelines, Azure DevOps, Jira, Confluence, Salesforce &amp; CRM integrations</span></li>
+									<!-- <li class="d-flex"><span>Other Skills:</span> <span>Cloud, PySpark, Excel, Git, JIRA, Google Analytics &amp; SEO</span></li> -->
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="30">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<!-- <p><a href="https://www.linkedin.com/in/jigneshmore/" class="btn btn-primary py-3 px-3">LinkedIn</a></p> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <!-- <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Senior Data Analyst with 7+ years of experience driving business strategies through data-driven insights. Proven expertise in data science, statistical analysis, machine learning algorithms and project management.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2021-Present</span>
+						<h2>Senior Data Analyst</h2>
+						<span class="position">Merkle</span>
+						<p class="mt-4">Merkle, a leading CXM and media company with over 10K+ professionals globally. It's a part of Dentsu International. 
+							<ul>
+								<li>Analysed ad campaigns, clickstream, and customer surveys data, identified an increasing demand and launched a strategic product line.</li>
+								<li>Developed time series forecasting models to predict sales and optimize marketing budgets, got model performance of 92%.</li>
+								<li>Designed and executed A/B tests, performed rigorous statistical analysis. Led to 20% MoM increase in the conversion rate.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2018-2021</span>
+						<h2>Senior Data Analyst</h2>
+						<span class="position">iQuanti</span>
+						<p class="mt-4">iQuanti is a data-driven digital marketing analytics and solutions company, helps top 100 global brands. 
+							<ul>
+								<li>Performed in-depth market research and analysis to create online pages. Resulted in ~100% website growth and 30% increase in conversion rate YoY.</li>
+								<li>Delivered multiple training and mentorship sessions on analytical tools like SQL, MS Excel, Power BI, Tableau and Python.</li>
+								<li>Performed migration and enhancements for merchandising dashboard, involved data integration and its feature improvement.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2014-2018</span>
+    					<h2>Bachelor of Engineering</h2>
+    					<span class="position">Visvesvaraya Technological University</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2012-2013</span>
+    					<h2>Higher Secondary School</h2>
+    					<span class="position">Army Public School</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section> -->
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are the sample Data Analytics projects on SQL, Python, Power BI & ML.</p>
+          </div>
+        </div>
+
+        <h2>Data Analytics Projects</h2>
+
+		<div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://public.tableau.com/app/profile/jignesh.more/viz/SalesDashboardOLD/ProductPerformance" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://public.tableau.com/app/profile/jignesh.more/viz/SalesDashboardOLD/ProductPerformance">Sales Performance & Operations Dashboard (Tableau)</a></h3>
+                <!-- <p>Analyzed music store data using advanced SQL queires to identify gaps and increase the business growth.</p> -->
+				 <h4>Objective</h4>
+            <p>
+                Enable leadership and operations teams to monitor sales performance, product demand,
+                and fulfillment risks across multiple dimensions.
+            </p>
+
+            <h4>Approach</h4>
+            <ul>
+                <li>Designed a multi-tab Tableau dashboard covering product, agency, and order-level views</li>
+                <li>Analyzed product performance at family and model level</li>
+                <li>Built open order and backorder summaries to identify fulfillment risk</li>
+                <li>Enabled agency-wise comparisons and dynamic filtering by category and segment</li>
+            </ul>
+
+            <h4>Impact</h4>
+            <p>
+                Improved visibility into underperforming products and backorder risks,
+                reduced manual reporting, and supported faster decision-making based on real time reporting
+                for product and agency performance reviews.
+            </p>
+              </div>
+            </div>
+          </div>
+
+
+		  <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://public.tableau.com/app/profile/jignesh.more/viz/AgencySalesDistributionDashboard/SalesDistributionDashboard" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://public.tableau.com/app/profile/jignesh.more/viz/AgencySalesDistributionDashboard/SalesDistributionDashboard">Agency Sales Distribution & Flow Analysis (Tableau)</a></h3>
+                <!-- <p>Analyzed music store data using advanced SQL queires to identify gaps and increase the business growth.</p> -->
+            <h4>Objective</h4>
+            <p>
+                Visualize complex sales flows between agencies and distribution channels
+                to uncover revenue concentration risks.
+            </p>
+
+            <h4>Approach</h4>
+            <ul>
+                <li>Built Sankey charts to visualize sales flow from agencies to distributors</li>
+                <li>Highlighted revenue concentration across key agencies and channels</li>
+                <li>Enabled interactive filtering for agency and segment-level analysis</li>
+            </ul>
+
+            <h4>Impact</h4>
+            <p>
+                Exposed over-dependence on specific agencies, improved transparency
+                in sales distribution, and supported rebalancing of channel strategies.
+            </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://public.tableau.com/app/profile/jignesh.more/viz/AirlineDashboard_17412290538440/AirlineandPassengersSummary" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://public.tableau.com/app/profile/jignesh.more/viz/AirlineDashboard_17412290538440/AirlineandPassengersSummary">Airline Passenger Traffic & Network Analysis Dashboard (Tableau)</a></h3>
+                <!-- <p>Analyzed music store data using advanced SQL queires to identify gaps and increase the business growth.</p> -->
+            <h4>Objective</h4>
+            <p>
+                Provide a comprehensive view of airline passenger traffic and network reach
+                across regions, countries, and cities.
+            </p>
+
+            <h4>Approach</h4>
+            <ul>
+                <li>Analyzed passenger volume by airline, region, country, and city</li>
+                <li>Visualized direct passenger traffic and route-level patterns</li>
+                <li>Enabled cross-filtering for airline and geography-based exploration</li>
+            </ul>
+
+            <h4>Impact</h4>
+            <p>
+                Identified high-traffic routes and under-served regions,
+                supporting route optimization and data-driven capacity planning.
+            </p>
+              </div>
+            </div>
+          </div>
+
+        <h2>Data Engineering & Data Science Projects</h2>
+
+		<div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/MoreJignesh/Python_practice_quiz" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/MoreJignesh/Python_practice_quiz">Python Practice & Skill Validation Repository</a></h3>
+				<p><strong>Objective:</strong><br>
+				Strengthen core Python programming skills required for Data Analytics, Data Engineering, and Data Science roles through structured problem-solving and hands-on exercises.
+				</p>
+
+				<p><strong>Approach:</strong><br>
+				Built a repository of Python quizzes and practice problems covering control structures, functions, data structures, and real-world logic building. Emphasis was placed on clean code, readability, and problem decomposition.
+				</p>
+
+				<p><strong>Results:</strong><br>
+				Developed a strong foundation in Python logic and problem-solving, improving confidence in writing efficient and reusable code for analytical and data engineering workflows.
+				</p>
+
+				<p><strong>Impact:</strong><br>
+				This repository demonstrates continuous learning, coding discipline, and readiness to work with Python-based analytics, ETL pipelines, and data science projects.
+				</p>
+              </div>
+            </div>
+          </div>
+
+
+		  <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/MoreJignesh/DataDocumentation/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/MoreJignesh/DataDocumentation/tree/main">End-to-End Data Documentation for Multiplayer Gaming Platform</a></h3>
+				<p><strong>Objective:</strong><br>
+				Create clear, structured, and scalable documentation to support data flows, system understanding, and collaboration for a multiplayer gaming website.
+				</p>
+
+				<p><strong>Approach:</strong><br>
+				Designed detailed documentation outlining data entities, system interactions, and logical workflows. Focused on clarity, consistency, and ease of onboarding for technical and non-technical stakeholders.
+				</p>
+
+				<p><strong>Results:</strong><br>
+				Produced comprehensive documentation that improves system transparency, reduces knowledge gaps, and supports future development and data integration efforts.
+				</p>
+
+				<p><strong>Impact:</strong><br>
+				Demonstrates strong data communication skills, system thinking, and the ability to document complex data ecosystems—an essential skill for Data Engineering and Analytics roles.
+				</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/MoreJignesh/Python-Data-Analysis-Projects/blob/main/Google_Playstore_data.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/MoreJignesh/Python-Data-Analysis-Projects/blob/main/Google_Playstore_data.ipynb">Google Play Store App Market Analysis</a></h3>
+				<p><strong>Objective:</strong><br>
+				Analyze the Google Play Store ecosystem to identify the most popular app categories, highest-installed apps, and key factors influencing app success.
+				</p>
+
+				<p><strong>Approach:</strong><br>
+				Performed data cleaning, preprocessing, and Exploratory Data Analysis (EDA) using Python, Pandas, and visualization libraries. Examined app installs, sizes, ratings, categories, and pricing models.
+				</p>
+
+				<p><strong>Results:</strong><br>
+				Identified top-performing app categories, apps with the highest installations, and trends related to app size, pricing, and user engagement.
+				</p>
+
+				<p><strong>Impact:</strong><br>
+				Provides data-driven insights that can guide app developers, marketers, and product managers in optimizing app strategy and market positioning.
+				</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+	
+		<div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/MoreJignesh/British_Airways-Data_Science" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/MoreJignesh/British_Airways-Data_Science">British Airways Customer Feedback & Recommendation Prediction</a></h3>
+				<p><strong>Objective:</strong><br>
+				Understand key drivers influencing customer recommendations for British Airways by analyzing customer feedback and building predictive models.
+				</p>
+
+				<p><strong>Approach:</strong><br>
+				Scraped airline review data from online sources, followed by data cleaning, missing value imputation, and Exploratory Data Analysis (EDA). Developed machine learning models and applied sentiment analysis to uncover patterns in customer satisfaction.
+				</p>
+
+				<p><strong>Results:</strong><br>
+				Identified critical service factors impacting customer recommendations and revealed how service attributes evolved over time. Successfully used sentiment analysis to capture customer perception trends.
+				</p>
+
+				<p><strong>Impact:</strong><br>
+				Demonstrates end-to-end data science capability—from data acquisition and preprocessing to modeling and insight generation—supporting strategic decision-making in customer experience optimization.
+				</p>
+              </div>
+            </div>
+          </div>
+
+
+		  <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/MoreJignesh/Insurance-Analytics-Lakehouse-Platform" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/MoreJignesh/Insurance-Analytics-Lakehouse-Platform">Insurance Analytics Lakehouse Platform (Databricks, Delta Lake, dbt)</a></h3>
+				<p><strong>Objective:</strong><br>
+				Design and implement a scalable, analytics-ready Lakehouse platform for insurance data to support data-driven decision-making, reporting, and advanced analytics.
+				</p>
+
+				<p><strong>Approach:</strong><br>
+				Built an end-to-end Lakehouse architecture using Databricks, Delta Lake, and dbt following the Bronze–Silver–Gold medallion pattern. Implemented schema enforcement, incremental ingestion using Autoloader, metadata-driven pipelines, data quality tests, and transformation logic using dbt models.
+				</p>
+
+				<p><strong>Results:</strong><br>
+				Successfully delivered a production-style platform capable of handling raw, semi-structured insurance data and transforming it into clean, trusted, and analytics-ready datasets with strong data governance and testing.
+				</p>
+
+				<p><strong>Impact:</strong><br>
+				Demonstrates real-world Data Engineering expertise including scalable pipeline design, Lakehouse architecture, data quality enforcement, and modern analytics engineering best practices used in enterprise environments.
+				</p>
+
+				<p><strong>Key Skills & Technologies:</strong><br>
+				Databricks, Delta Lake, dbt, Autoloader, Medallion Architecture, Data Modeling, Data Quality Testing, Metadata-Driven Pipelines
+				</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/MoreJignesh/Student_Performance_Analytics_ML" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/MoreJignesh/Student_Performance_Analytics_ML">Student Performance Analytics & Machine Learning Platform</a></h3>
+				<p><strong>Objective:</strong><br>
+				Build a fully modular, end-to-end machine learning solution to analyze student performance and predict outcomes using structured academic data.
+				</p>
+
+				<p><strong>Approach:</strong><br>
+				Developed a complete ML pipeline including data ingestion, Exploratory Data Analysis (EDA), feature engineering, feature selection, model training, and hyperparameter tuning. Implemented reusable training and inference pipelines with clean, modular code design, enabling future deployment and scalability.
+				</p>
+
+				<p><strong>Results:</strong><br>
+				Produced optimized machine learning models with well-structured training and testing workflows, ensuring reproducibility, maintainability, and performance evaluation across multiple algorithms.
+				</p>
+
+				<p><strong>Impact:</strong><br>
+				Demonstrates strong applied Data Science and ML Engineering skills, including pipeline-based design, experimentation, and readiness for production deployment (with future web-based inference planned).
+				</p>
+
+				<p><strong>Key Skills & Technologies:</strong><br>
+				Python, Pandas, Scikit-learn, Feature Engineering, Feature Selection, Model Training, Hyperparameter Tuning, ML Pipelines
+				</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/ /sales_forecasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/ /sales_forecasting/tree/main">Sales Forecast- Time Series Forecasting</a></h3>
+				  <p>Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/ /customer_segmentation/blob/main/Customer_Segmentation-final.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/ /customer_segmentation/blob/main/Customer_Segmentation-final.ipynb">Customer Segmentation using clustering model</a></h3>
+				  <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="29">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="42">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="48">0</strong>
+                <span>Mentored Students</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="1682">0</strong>
+                <span>Cups of coffee</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+						<br>
+						<p><a href="https://github.com/ " class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+<!-- 
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Canada</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://0101010101">+ 0 101 0101 101</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:info@yoursite.com">jigneshmore5445@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="#">resumelink</a></p>
+	          </div>
+          </div> -->
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/uLaTShUKXraAvHJ77" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <!-- <li class="ftco-animate"><a href="https://www.youtube.com/@_Official"><span class="icon-youtube"></span></a></li> -->
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/jigneshmore/"><span class="icon-linkedin"></span></a></li>  
+					  <!-- <li class="ftco-animate"><a href="https://twitter.com/ "><span class="icon-twitter"></span></a></li>
+					  <li class="ftco-animate"><a href="https://twitter.com/ "><span class="icon-facebook"></span></a></li> -->
+				      <!-- <li class="ftco-animate"><a href="https://www.instagram.com/ /"><span class="icon-instagram"></span></a></li> -->
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
