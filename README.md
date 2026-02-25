@@ -1,7 +1,7 @@
 # 👋 Hi, I'm Jignesh More
 
 🎯 Senior Data Analyst | Aspiring Data Scientist (NLP & Machine Learning)  
-📍 Toronto  
+📍 Canada  
 📫 jigneshmore5445@gmail.com | 🌐 [My Portfolio Website](https://morejignesh.github.io/github.io/)
 
 ---
